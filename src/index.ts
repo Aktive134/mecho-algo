@@ -12,7 +12,7 @@ export function translateCharacter(character: string, position: number) {
   const num_turns_completed = Math.floor(position / num_of_character);
 
   // Calculate the remaining position after complete turns;
-  const num_turns_left = position - num_turns_completed * num_of_character;
+  const num_turns_left = position % num_of_character;
 
   // Find the character at the remaining position
   const last_char_position = character.charAt(num_turns_left);
