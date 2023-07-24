@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^29.6.1",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/jest": "^29.5.3",
+    "babel-jest": "^29.6.1",
+    "ts-jest": "^29.1.1"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
